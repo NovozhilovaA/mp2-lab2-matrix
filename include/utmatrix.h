@@ -204,13 +204,7 @@ TVector<ValType> TVector<ValType>::operator*(const ValType &val)
 template <class ValType> // сложение
 TVector<ValType> TVector<ValType>::operator+(const TVector<ValType> &v)
 {
-	/*if (Size != v.Size)
-		throw exception("no equal size");
-	TVector x(*this);
-	for (int i = 0; i < Size; i++)
-		x.pVector[i] += v.pVector[i];
-	return x;
- */
+	
 	TVector<ValType> vect(Size);
   if ((Size == v.Size) && (StartIndex == v.StartIndex))
   {
